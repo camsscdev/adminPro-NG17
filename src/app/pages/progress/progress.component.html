@@ -1,3 +1,61 @@
-<p>
-  pantal de progress work
-</p>
+<div class="row">
+  <div class="col-12">
+    <div class="card border border-light-subtle">
+      <div class="card-body">
+        <h4 class="card-title">Striped progress bar</h4>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped example"
+          aria-valuenow="75"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar progress-bar-striped bg-success progress-bar-animated bg-s"
+            [style.width]="getPercenteage1"
+          ></div>
+        </div>
+        <br />
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped example"
+          aria-valuenow="75"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar progress-bar-striped bg-success progress-bar-animated bg-s"
+            [style.width]="getPercenteage2"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <incrementador
+          [progress]="progress1"
+          (valueHandle)="progress1 = $event"
+          [btnClass]="'btn btn-success'"
+        ></incrementador>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <incrementador
+          [progress]="progress2"
+          (valueHandle)="progress2 = $event"
+          [btnClass]="'btn btn-danger'"
+        ></incrementador>
+      </div>
+    </div>
+  </div>
+</div>

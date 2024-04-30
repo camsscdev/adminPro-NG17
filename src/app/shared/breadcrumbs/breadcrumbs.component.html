@@ -1,6 +1,10 @@
 <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Library</li>
-  </ol>
+  <div class="header-breadcrumb">
+    <h2>{{ title }}</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active"><a href="#">Home</a></li>
+      <li class="breadcrumb-item" aria-current="page">Pages</li>
+      <li class="breadcrumb-item" aria-current="page">{{ title }}</li>
+    </ol>
+  </div>
 </nav>

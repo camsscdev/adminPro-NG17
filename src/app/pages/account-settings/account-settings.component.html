@@ -1,0 +1,55 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="r-panel-body">
+          <ul id="themecolors" class="m-t-20 panel">
+            <p><b>Con el sidebar claro</b></p>
+
+            <button
+              (click)="changeTheme('default-light')"
+              class="selector default-theme"
+            ></button>
+
+            <button
+              (click)="changeTheme('green-light')"
+              class="selector green-theme"
+            ></button>
+
+            <button
+              (click)="changeTheme('red-light')"
+              class="selector red-theme selection"
+            ></button>
+
+            <button
+              (click)="changeTheme('blue-light')"
+              class="selector blue-theme"
+            ></button>
+
+            <li class="d-block m-t-30"><b>Con el sidebar oscuro</b></li>
+
+            <button
+              (click)="changeTheme('default-dark')"
+              class="selector default-theme dark"
+            ></button>
+
+            <button
+              (click)="changeTheme('green-dark')"
+              class="selector green-theme dark"
+            ></button>
+
+            <button
+              (click)="changeTheme('red-dark')"
+              class="selector red-theme dark"
+            ></button>
+
+            <button
+              (click)="changeTheme('blue-dark')"
+              class="selector blue-theme dark"
+            ></button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewChild,
+  inject,
+} from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { UtilsService } from '../../services/utils.service';
 
 @Component({
   selector: 'header',
@@ -9,7 +17,9 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
-
   ngOnInit() {}
+
+  public theme = inject(UtilsService);
+
+  constructor() {}
 }

@@ -1,3 +1,26 @@
-<p>
-  grafica1 works!
-</p>
+<div class="row">
+  <div class="col-4">
+    <div class="card">
+      <donut title="Cocacola" [chartLabels]="labels1" [data]="data1"></donut>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="card">
+      <donut [chartLabels]="labels2" [data]="data2"></donut>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="card">
+      <donut title="Ramo" [chartLabels]="labels3" [data]="data3"></donut>
+    </div>
+  </div>
+  <div class="col-6 mt-4">
+    <div class="card">
+      <donut
+        title="Ventas finales"
+        [chartLabels]="labels4"
+        [data]="data4"
+      ></donut>
+    </div>
+  </div>
+</div>

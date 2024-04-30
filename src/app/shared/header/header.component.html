@@ -1,6 +1,6 @@
 <nav
-  class="navbar w-100 bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary"
-  data-bs-theme="dark"
+  class="navbar w-100 border-body navbar-expand-lg bg-body-tertiary"
+  [attr.data-bs-theme]="theme.theme()"
 >
   <div class="container-fluid">
     <a class="navbar-brand" href="#">AdminPro</a>
@@ -41,7 +41,7 @@
             >
           </li>
           <li>
-            <a class="dropdown-item" href="#"
+            <a class="dropdown-item" [routerLink]="['/settings']"
               ><i class="bi bi-gear"></i> Configuración</a
             >
           </li>

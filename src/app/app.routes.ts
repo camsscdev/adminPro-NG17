@@ -22,6 +22,7 @@ export const routes: Routes = [
       { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
       {
         path: 'dashboard',
+        data: { titulo: 'Tablero' },
         loadComponent: () =>
           import('./pages/dashboard/dashboard.component').then(
             (x) => x.DashboardComponent
@@ -30,6 +31,7 @@ export const routes: Routes = [
 
       {
         path: 'progress',
+        data: { titulo: 'Barra progreso' },
         loadComponent: () =>
           import('./pages/progress/progress.component').then(
             (x) => x.ProgressComponent
@@ -37,10 +39,33 @@ export const routes: Routes = [
       },
       {
         path: 'grafica1',
+        data: { titulo: 'Grafica' },
         loadComponent: () =>
           import('./pages/grafica1/grafica1.component').then(
             (x) => x.Grafica1Component
           ),
+      },
+      {
+        path: 'settings',
+        data: { titulo: 'Configuracioness' },
+        loadComponent: () =>
+          import('./pages/account-settings/account-settings.component').then(
+            (x) => x.AccountSettingsComponent
+          ),
+      },
+      {
+        path: 'promises',
+        data: { titulo: 'Promesas' },
+        loadComponent: () =>
+          import('./pages/promises/promises.component').then(
+            (x) => x.PromisesComponent
+          ),
+      },
+      {
+        path: 'rxjs',
+        data: { titulo: 'Rxjs' },
+        loadComponent: () =>
+          import('./pages/rxjs/rxjs.component').then((x) => x.RxjsComponent),
       },
     ],
   },
